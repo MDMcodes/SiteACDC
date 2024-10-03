@@ -202,7 +202,17 @@ body {
 /* Estilo para as informações do participante */
 .participante-info h3 {
   margin: 0; /* Remove margem superior e inferior */
-  color: red; /* Cor do nome */
+  color: white; /* Cor padrão dos nomes */
+}
+
+.participante-info h3 a {
+  color: white; /* Cor padrão dos links */
+  text-decoration: none; /* Remove o sublinhado */
+}
+
+.participante-info h3 a:hover {
+  color: red; /* Cor ao passar o mouse */
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
 .participante-info p {
