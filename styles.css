@@ -54,20 +54,16 @@ body {
   background-position: center;
 }
 
-.imgini {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
+/* Imagem inicial na página Home */
 .imgini img {
   width: 100%; /* Faz a imagem ocupar a largura total da div */
   height: auto; /* Mantém a proporção da imagem */
+  max-height: 400px; /* Define uma altura máxima para a imagem */
+  object-fit: contain; /* Mantém a proporção da imagem e garante que toda a imagem seja visível */
   display: block; /* Remove espaços indesejados ao redor da imagem */
-  border: none; /* Remove a borda */
 }
 
-/* Linha vermelha separando a imagem das notícias */
+/* Estilo das notícias */
 .News {
   border-top: 2px solid red;
   margin-top: 20px;
@@ -78,8 +74,8 @@ body {
 .NewsEnd {
   border-top: 2px solid red;
   margin-top: 20px;
-  padding-top: 10px; /* Adiciona espaço para garantir que a linha apareça após o conteúdo */
-  clear: both; /* Garante que a linha seja renderizada corretamente abaixo de todos os elementos */
+  padding-top: 10px;
+  clear: both;
 }
 
 /* Estilo das notícias */
@@ -119,10 +115,10 @@ body {
 }
 
 .album img {
-  width: 250px; /* Largura padrão da imagem do álbum */
-  height: 250px; /* Altura padrão da imagem do álbum */
+  width: 300px; /* Largura padrão da imagem do álbum */
+  height: 300px; /* Altura padrão da imagem do álbum */
   object-fit: cover; /* Garante que a imagem preencha a área sem distorção */
-  border: 2px solid white; /* Borda para as imagens */
+  border: none; /* Remove a borda */
   border-radius: 10px; /* Cantos arredondados */
 }
 
@@ -136,4 +132,12 @@ body {
   font-size: 1.1em; /* Tamanho do texto */
   max-width: 600px; /* Largura máxima da descrição */
   margin: 10px auto; /* Centraliza a descrição */
+}
+
+/* Estilo do histórico */
+#historico img {
+  width: 100%; /* Faz a imagem ocupar a largura total da div */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove espaços indesejados ao redor da imagem */
+  margin: 20px 0; /* Espaçamento vertical */
 }
