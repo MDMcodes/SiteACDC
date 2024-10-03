@@ -1,133 +1,15 @@
-/* Estilizar o corpo da página */
 body {
-    background-color: #000; /* Preto */
-    color: #fff; /* Branco */
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background-color: black;
   }
-  
-  /* Estilizar o container */
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* Estilizar o cabeçalho */
-  .header {
-    background-color: #FF0000; /* Vermelho */
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .header h1 {
-    font-size: 36px;
-    margin: 0;
-  }
-  
-  .header sub {
-    font-size: 18px;
-    color: #ccc;
-  }
-  
-  /* Estilizar o botão */
-  .buttonin {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-  }
-  
-  .buttonin a {
-    background-color: #333; /* Preto */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  
-  .buttonin a:hover {
-    background-color: #444; /* Preto escuro */
-  }
-  
-  /* Estilizar o conteúdo */
-  .corpo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .imghome {
-    width: 100%;
-    height: 200px;
-    margin-bottom: 20px;
-  }
-  
-  .imghome img {
+.container {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-  }
-  
-  .News {
-    background-color: #f7f7f7; /* Cinza claro */
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .noticia {
-    margin-bottom: 20px;
-  }
-  
-  .noticia h3 {
-    font-size: 24px;
-    margin-top: 0;
-  }
-  
-  .noticia p {
-    margin-bottom: 10px;
-  }
-  
-  .ler-mais {
-    text-decoration: none;
-    color: #337ab7;
-  }
-  
-  .ler-mais:hover {
-    color: #23527c;
-  }
-  
-  /* Estilizar o rodapé */
-  .footer {
-    background-color: #FF0000; /* Vermelho */
-    color: #fff;
+    display: flex;
+}
+
+.container .header {
+    background-color: #FF0000; /* Cabeçalho vermelho */
+    color: #fff; /* Texto do cabeçalho branco */
     padding: 20px;
     text-align: center;
-    clear: both;
-  }
-  
-  .footer ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .footer li {
-    margin-right: 20px;
-  }
-  
-  .footer a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .footer a:hover {
-    color: #ccc;
   }
