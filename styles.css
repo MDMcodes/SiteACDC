@@ -1,61 +1,139 @@
-/* Remover margens padrão do navegador */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Estilo geral */
 body {
   margin: 0;
-}
-
-/* Estilizar o container */
-.container {
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilizar o header */
-#header {
-  background-color: #FF0000; /* Cor de fundo vermelha */
+  font-family: 'Arial', sans-serif;
+  background-color: #000;
   color: #fff;
+}
+
+/* Estilo do cabeçalho */
+#header {
+  background-color: red; /* Fundo vermelho para o cabeçalho */
   padding: 20px;
   text-align: center;
-  max-width: 1200px; /* Largura máxima do cabeçalho */
-  margin: 0 auto; /* Centralizar o cabeçalho */
+  border-bottom: 2px solid black;
 }
 
 #header h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
+  color: black;
+  font-size: 3em;
+  margin: 0;
 }
 
-#header h3 {
-  font-size: 18px;
-  color: #ccc;
+#header h2 {
+  color: white;
+  font-size: 1.5em;
+  margin-top: 10px;
 }
 
-/* Estilizar os botões */
+/* Estilo dos botões */
 .buttonin {
-  display: flex;
-  justify-content: center;
   margin-top: 20px;
 }
 
 .buttonin .btn {
-  background-color: #000; /* Cor de fundo preta */
+  text-decoration: none;
   color: #fff;
-  border: none;
+  background-color: black;
   padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  margin: 0 10px;
+  margin: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 .buttonin .btn:hover {
-  background-color: #333; /* Cor de fundo escura ao passar o mouse */
+  background-color: #333;
+}
+
+/* Estilo do corpo */
+#Corpo {
+  text-align: center;
+  padding: 40px;
+  background-image: url('background1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.imgini {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.imgini img {
+  width: 100%; /* Faz a imagem ocupar a largura total da div */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove espaços indesejados ao redor da imagem */
+  border: none; /* Remove a borda */
+}
+
+/* Linha vermelha separando a imagem das notícias */
+.News {
+  border-top: 2px solid red;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+/* Linha vermelha no final das notícias */
+.NewsEnd {
+  border-top: 2px solid red;
+  margin-top: 20px;
+  padding-top: 10px; /* Adiciona espaço para garantir que a linha apareça após o conteúdo */
+  clear: both; /* Garante que a linha seja renderizada corretamente abaixo de todos os elementos */
+}
+
+/* Estilo das notícias */
+.News h2 {
+  color: red;
+  font-size: 2em;
+}
+
+.Newstxt p {
+  color: white;
+  font-size: 1.2em;
+}
+
+/* Estilo do rodapé */
+#footer {
+  background-color: red; /* Fundo vermelho para o rodapé */
+  padding: 10px;
+  text-align: center;
+  border-top: 2px solid black;
+}
+
+#footer p {
+  color: black;
+  font-size: 1em;
+}
+
+/* Estilo geral dos álbuns */
+.album {
+  margin: 20px auto; /* Espaço entre os álbuns */
+  text-align: center;
+  padding-top: 20px; /* Espaço entre o topo do álbum e a linha */
+  border-top: 2px solid red; /* Linha vermelha acima de cada álbum */
+}
+
+.album:first-child {
+  border-top: none; /* Remove a linha do primeiro álbum */
+}
+
+.album img {
+  width: 250px; /* Largura padrão da imagem do álbum */
+  height: 250px; /* Altura padrão da imagem do álbum */
+  object-fit: cover; /* Garante que a imagem preencha a área sem distorção */
+  border: 2px solid white; /* Borda para as imagens */
+  border-radius: 10px; /* Cantos arredondados */
+}
+
+.album h3 {
+  color: red; /* Cor do título do álbum */
+  font-size: 1.5em; /* Tamanho do texto */
+}
+
+.album p {
+  color: white; /* Cor do texto de descrição */
+  font-size: 1.1em; /* Tamanho do texto */
+  max-width: 600px; /* Largura máxima da descrição */
+  margin: 10px auto; /* Centraliza a descrição */
 }
