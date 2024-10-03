@@ -141,3 +141,71 @@ body {
   display: block; /* Remove espaços indesejados ao redor da imagem */
   margin: 20px 0; /* Espaçamento vertical */
 }
+
+.turne-images {
+  display: flex; /* Alinha as imagens em linha */
+  justify-content: center; /* Centraliza as imagens horizontalmente */
+  margin-top: 20px; /* Espaçamento acima das imagens */
+}
+
+.turne-item {
+  text-align: center; /* Centraliza o texto da legenda */
+  margin: 0 10px; /* Espaçamento entre os itens */
+}
+
+.turne-img {
+  width: 250px; /* Largura fixa para as imagens das turnês */
+  height: 250px; /* Altura fixa para as imagens das turnês */
+  object-fit: cover; /* Mantém a proporção da imagem, cortando o excesso se necessário */
+  border-radius: 10px; /* Cantos arredondados para as imagens */
+  border: none; /* Remove a borda padrão */
+}
+
+.turne-item p {
+  color: white; /* Cor da legenda */
+  font-size: 1.1em; /* Tamanho da fonte */
+  margin-top: 5px; /* Espaço entre a imagem e a legenda */
+}
+
+.separator {
+  border-top: 2px solid red; /* Linha vermelha */
+  margin: 20px 0; /* Espaçamento acima e abaixo da linha */
+}
+
+/* Estilo para o container dos participantes */
+.participantes-container {
+  display: flex; /* Alinha os participantes em linha */
+  flex-wrap: wrap; /* Permite que os participantes se movam para a próxima linha se não houver espaço */
+  justify-content: center; /* Centraliza os participantes */
+  margin: 20px; /* Margem externa para o container */
+}
+
+/* Estilo para cada participante */
+.participante {
+  display: flex; /* Alinha imagem e informações em linha */
+  align-items: center; /* Centraliza verticalmente */
+  margin: 20px; /* Espaçamento entre participantes */
+  background-color: rgba(255, 0, 0, 0.315); /* Fundo levemente vermelho */
+  border-radius: 10px; /* Cantos arredondados */
+  padding: 20px; /* Espaçamento interno */
+  width: 400px; /* Largura fixa para cada participante */
+}
+
+/* Estilo para a imagem do participante */
+.participante-img {
+  width: 120px; /* Largura da imagem aumentada */
+  height: 120px; /* Altura da imagem aumentada */
+  border-radius: 50%; /* Torna a imagem circular */
+  margin-right: 15px; /* Espaçamento à direita da imagem */
+}
+
+/* Estilo para as informações do participante */
+.participante-info h3 {
+  margin: 0; /* Remove margem superior e inferior */
+  color: red; /* Cor do nome */
+}
+
+.participante-info p {
+  margin: 0; /* Remove margem superior e inferior */
+  color: white; /* Cor do texto */
+}
