@@ -8,7 +8,7 @@ body {
 
 /* Estilo do cabeçalho */
 #header {
-  background-color: red; /* Fundo vermelho para o cabeçalho */
+  background-color: red; 
   padding: 20px;
   text-align: center;
   border-bottom: 2px solid black;
@@ -56,11 +56,11 @@ body {
 
 /* Imagem inicial na página Home */
 .imgini img {
-  width: 100%; /* Faz a imagem ocupar a largura total da div */
-  height: auto; /* Mantém a proporção da imagem */
-  max-height: 400px; /* Define uma altura máxima para a imagem */
-  object-fit: contain; /* Mantém a proporção da imagem e garante que toda a imagem seja visível */
-  display: block; /* Remove espaços indesejados ao redor da imagem */
+  width: 100%; 
+  height: auto; 
+  max-height: 400px; 
+  object-fit: contain; 
+  display: block; 
 }
 
 /* Estilo das notícias */
@@ -91,7 +91,7 @@ body {
 
 /* Estilo do rodapé */
 #footer {
-  background-color: red; /* Fundo vermelho para o rodapé */
+  background-color: red; 
   padding: 10px;
   text-align: center;
   border-top: 2px solid black;
@@ -104,10 +104,10 @@ body {
 
 /* Estilo geral dos álbuns */
 .album {
-  margin: 20px auto; /* Espaço entre os álbuns */
+  margin: 20px auto; 
   text-align: center;
-  padding-top: 20px; /* Espaço entre o topo do álbum e a linha */
-  border-top: 2px solid red; /* Linha vermelha acima de cada álbum */
+  padding-top: 20px; 
+  border-top: 2px solid red; 
 }
 
 .album:first-child {
@@ -115,11 +115,11 @@ body {
 }
 
 .album img {
-  width: 300px; /* Largura padrão da imagem do álbum */
-  height: 300px; /* Altura padrão da imagem do álbum */
-  object-fit: cover; /* Garante que a imagem preencha a área sem distorção */
-  border: none; /* Remove a borda */
-  border-radius: 10px; /* Cantos arredondados */
+  width: 300px; 
+  height: 300px;
+  object-fit: cover;
+  border: none; 
+  border-radius: 10px;
 }
 
 .album h3 {
@@ -136,9 +136,9 @@ body {
 
 /* Estilo do histórico */
 #historico img {
-  width: 100%; /* Faz a imagem ocupar a largura total da div */
-  height: auto; /* Mantém a proporção da imagem */
-  display: block; /* Remove espaços indesejados ao redor da imagem */
+  width: 100%; 
+  height: auto; 
+  display: block; 
   margin: 20px 0; /* Espaçamento vertical */
 }
 
@@ -218,4 +218,28 @@ body {
 .participante-info p {
   margin: 0; /* Remove margem superior e inferior */
   color: white; /* Cor do texto */
+}
+
+/* Galeria de Fotos */
+.fotos-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.fotos-container img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid red;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efeito ao passar o mouse nas fotos */
+.fotos-container img:hover {
+  transform: scale(1.05); /* Leve aumento no tamanho */
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.6); /* Sombra vermelha ao redor */
 }
